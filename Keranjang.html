@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>keranjang_SabarElectrics</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="asset/css/script.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container">
+        <!-- Logo / Brand -->
+        <a
+          class="navbar-brand"
+          style="font-weight: bold; color: #28809a"
+          href="Landing Page.html"
+          >Sabar Electrics</a
+        >
+
+        <!-- Dropdown -->
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              data-bs-toggle="dropdown"
+              href="#"
+              role="button"
+              aria-expanded="false"
+            >
+              Kategori
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <!-- Toggler untuk mobile -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <!-- Form Search -->
+          <form class="d-flex ms-auto me-3" role="search">
+            <input
+              class="form-control"
+              type="search"
+              placeholder="Cari Barang Electrics"
+              aria-label="Cari"
+              style="width: 700px"
+            />
+          </form>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="navbar-brand" href="#">
+                <img
+                  src="asset/icon/keranjang.png"
+                  alt="keranjang"
+                  width="30"
+                  height="30"
+                />
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="navbar-brand" href="#">
+                <img
+                  src="asset/icon/notif.png"
+                  alt="notif"
+                  width="30"
+                  height="30"
+                />
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="navbar-brand" href="#">
+                <img
+                  src="asset/icon/whatsapp.png"
+                  alt="whatsapp"
+                  width="30"
+                  height="30"
+                />
+              </a>
+            </li>
+            <li class="nav-item me-2 ms-2">
+              <button
+                type="button"
+                class="btn btn-primary"
+                style="background-color: #28809a"
+              >
+                Daftar
+              </button>
+            </li>
+            <li class="nav-item me-2 ms-2">
+              <button type="button" class="btn btn-outline-custom">
+                masuk
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- batas awal -->
+    <div class="container my-5">
+      <div class="row g-3 align-items-start">
+        <div class="col-md-8">
+          <h5><strong>Keranjang</strong></h5>
+        </div>
+        <div class="col-md-4"></div>
+        <div class="col-md-8">
+          <!-- Card Pilih semua barang -->
+          <div class="card p-3 mb-3" style="background-color: #28809a">
+            <div class="form-check mb-0">
+              <input class="form-check-input" type="checkbox" id="checkAll" />
+              <label
+                class="form-check-label"
+                for="checkAll"
+                style="color: #ffffff"
+              >
+                Pilih semua barang
+              </label>
+            </div>
+          </div>
+
+          <!-- Card Barang -->
+          <div class="card p-3 mb-3" style="background-color: #28809a">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="item1" />
+              <label
+                class="form-check-label fw-bold"
+                for="item1"
+                style="color: #ffffff"
+              >
+                Kipas Angin
+              </label>
+            </div>
+
+            <div class="d-flex mt-3 align-items-center">
+              <img
+                src="asset/Rekomendasi/gbr4.png"
+                alt="Lampu"
+                style="width: 80px; height: 80px; object-fit: cover"
+                class="me-3 rounded"
+              />
+
+              <div class="flex-grow-1">
+                <p class="mb-1" style="color: #ffffff">
+                  Lampu Hias
+                </p>
+                <strong style="color: #ffffff">Rp80.000</strong>
+              </div>
+
+              <div class="d-flex align-items-center gap-2">
+                <button class="btn btn-sm" style="background-color: #ffffff">
+                  Hapus
+                </button>
+                <button class="btn btn-sm" style="background-color: #ffffff">
+                  -
+                </button>
+                <input
+                  type="number"
+                  class="form-control form-control-sm text-center"
+                  value="1"
+                  min="1"
+                  max="20"
+                  style="width: 40px"
+                />
+                <button class="btn btn-sm" style="background-color: #ffffff">
+                  +
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Kolom kanan -->
+        <div class="col-md-4">
+          <div class="card p-3" style="background-color: #28809a">
+            <h6 class="fw-bold text-white">Rincian belanja</h6>
+            <input
+              type="text"
+              class="form-control mb-3"
+              placeholder="Total"
+              readonly
+            />
+            <a
+              href="Checkout.html"
+              class="btn w-100 fw-bold"
+              style="background-color: #ffffff; color: rgb(0, 0, 0)"
+            >
+              Beli
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- batas akhir -->
+    <!-- rekomendasi -->
+    <div class="container my-5">
+      <h5><strong>Rekomendasi Kami</strong></h5>
+      <div
+        class="d-flex align-items-center gap-3 p-3 rounded"
+        style="background-color: #28809a"
+      >
+        <div
+          class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-6 g-4"
+        >
+          <!-- Card Produk -->
+          <div class="col">
+            <div class="card h-100 shadow-sm">
+              <img
+                src="asset/rekomendasi/gbr1.png"
+                class="card-img-top"
+                alt="Nama Barang"
+              />
+              <div class="card-body">
+                <h6 class="card-title mb-1">Nama Barang</h6>
+                <p class="text-muted small mb-0">seri:</p>
+                <p class="text-muted small">Rp 123.000</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 shadow-sm">
+              <img
+                src="asset/rekomendasi/gbr1.png"
+                class="card-img-top"
+                alt="Nama Barang"
+              />
+              <div class="card-body">
+                <h6 class="card-title mb-1">Nama Barang</h6>
+                <p class="text-muted small mb-0">seri:</p>
+                <p class="text-muted small">Rp 123.000</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 shadow-sm">
+              <img
+                src="asset/rekomendasi/gbr1.png"
+                class="card-img-top"
+                alt="Nama Barang"
+              />
+              <div class="card-body">
+                <h6 class="card-title mb-1">Nama Barang</h6>
+                <p class="text-muted small mb-0">seri:</p>
+                <p class="text-muted small">Rp 123.000</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 shadow-sm">
+              <img
+                src="asset/rekomendasi/gbr1.png"
+                class="card-img-top"
+                alt="Nama Barang"
+              />
+              <div class="card-body">
+                <h6 class="card-title mb-1">Nama Barang</h6>
+                <p class="text-muted small mb-0">seri:</p>
+                <p class="text-muted small">Rp 123.000</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 shadow-sm">
+              <img
+                src="asset/rekomendasi/gbr1.png"
+                class="card-img-top"
+                alt="Nama Barang"
+              />
+              <div class="card-body">
+                <h6 class="card-title mb-1">Nama Barang</h6>
+                <p class="text-muted small mb-0">seri:</p>
+                <p class="text-muted small">Rp 123.000</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 shadow-sm">
+              <img
+                src="asset/rekomendasi/gbr1.png"
+                class="card-img-top"
+                alt="Nama Barang"
+              />
+              <div class="card-body">
+                <h6 class="card-title mb-1">Nama Barang</h6>
+                <p class="text-muted small mb-0">seri:</p>
+                <p class="text-muted small">Rp 123.000</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 shadow-sm">
+              <img
+                src="asset/rekomendasi/gbr2.png"
+                class="card-img-top"
+                alt="Nama Barang"
+              />
+              <div class="card-body">
+                <h6 class="card-title mb-1">Nama Barang</h6>
+                <p class="text-muted small mb-0">seri:</p>
+                <p class="text-muted small">Rp 123.000</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 shadow-sm">
+              <img
+                src="asset/rekomendasi/gbr2.png"
+                class="card-img-top"
+                alt="Nama Barang"
+              />
+              <div class="card-body">
+                <h6 class="card-title mb-1">Nama Barang</h6>
+                <p class="text-muted small mb-0">seri:</p>
+                <p class="text-muted small">Rp 123.000</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 shadow-sm">
+              <img
+                src="asset/rekomendasi/gbr2.png"
+                class="card-img-top"
+                alt="Nama Barang"
+              />
+              <div class="card-body">
+                <h6 class="card-title mb-1">Nama Barang</h6>
+                <p class="text-muted small mb-0">seri:</p>
+                <p class="text-muted small">Rp 123.000</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 shadow-sm">
+              <img
+                src="asset/rekomendasi/gbr2.png"
+                class="card-img-top"
+                alt="Nama Barang"
+              />
+              <div class="card-body">
+                <h6 class="card-title mb-1">Nama Barang</h6>
+                <p class="text-muted small mb-0">seri:</p>
+                <p class="text-muted small">Rp 123.000</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 shadow-sm">
+              <img
+                src="asset/rekomendasi/gbr2.png"
+                class="card-img-top"
+                alt="Nama Barang"
+              />
+              <div class="card-body">
+                <h6 class="card-title mb-1">Nama Barang</h6>
+                <p class="text-muted small mb-0">seri:</p>
+                <p class="text-muted small">Rp 123.000</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 shadow-sm">
+              <img
+                src="asset/rekomendasi/gbr2.png"
+                class="card-img-top"
+                alt="Nama Barang"
+              />
+              <div class="card-body">
+                <h6 class="card-title mb-1">Nama Barang</h6>
+                <p class="text-muted small mb-0">seri:</p>
+                <p class="text-muted small">Rp 123.000</p>
+              </div>
+            </div>
+          </div>
+          <!-- batas card  -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Kelebihan -->
+    <div class="container text-center py-5">
+      <h4 class="fw-bold mb-4">KELEBIHAN KAMI</h4>
+      <div class="row row-cols-2 row-cols-md-5 g-4">
+        <!-- Kelebihan 1 -->
+        <div class="col">
+          <img
+            src="asset/icon/product-exchange.png"
+            width="50"
+            alt="Pengembalian Produk"
+          />
+          <h6 class="fw-bold mt-3">Pengembalian Produk</h6>
+          <p class="small text-muted">
+            Konsumen dapat mengembalikan barang jika tidak sesuai.
+          </p>
+        </div>
+
+        <!-- Kelebihan 2 -->
+        <div class="col">
+          <img
+            src="asset/icon/tdesign_secured-filled.png"
+            width="50"
+            alt="Keaslian Barang"
+          />
+          <h6 class="fw-bold mt-3">Keaslian dan kualitas barang</h6>
+          <p class="small text-muted">
+            Barang berkualitas dan terjamin keasliannya oleh brand.
+          </p>
+        </div>
+
+        <!-- Kelebihan 3 -->
+        <div class="col">
+          <img
+            src="asset/icon/delivery.png"
+            width="50"
+            alt="Pengiriman Cepat"
+          />
+          <h6 class="fw-bold mt-3">Pengiriman Cepat</h6>
+          <p class="small text-muted">
+            Pengiriman sangat cepat dan barang terjamin.
+          </p>
+        </div>
+
+        <!-- Kelebihan 4 -->
+        <div class="col">
+          <img
+            src="asset/icon/shopping-basket.png"
+            width="50"
+            alt="Garansi Barang"
+          />
+          <h6 class="fw-bold mt-3">Garansi Barang</h6>
+          <p class="small text-muted">
+            Semua barang memiliki garansi dari brand.
+          </p>
+        </div>
+
+        <!-- Kelebihan 5 -->
+        <div class="col">
+          <img src="asset/icon/repair.png" width="50" alt="Free Instalasi" />
+          <h6 class="fw-bold mt-3">Free Instalasi</h6>
+          <p class="small text-muted">Gratis pemasangan barang oleh kami.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="text-white py-5" style="background-color: #28809a">
+      <div class="container">
+        <div class="row align-items-start">
+          <!-- footer nama dan deskripsi -->
+          <div class="col-md-6 mb-4">
+            <h5 class="fw-bold">SABAR ELECTRICS</h5>
+            <p class="small">
+              Dapatkan elektronik berkualitas dengan harga terjangkau - klik
+              sekarang dan temukan penawaran spesial hanya untuk Anda!
+            </p>
+          </div>
+
+          <!-- footer About, Support, FAQ -->
+          <div class="col-md-6 mb-4">
+            <div class="row">
+              <!-- About -->
+              <div class="col-4">
+                <h6 class="fw-bold">About</h6>
+                <ul class="list-unstyled small">
+                  <li>
+                    <a href="#" class="text-white text-decoration-none"
+                      >About us</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-white text-decoration-none">Blog</a>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Support -->
+              <div class="col-4">
+                <h6 class="fw-bold">Support</h6>
+                <ul class="list-unstyled small">
+                  <li>
+                    <a href="#" class="text-white text-decoration-none"
+                      >Contact Us</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-white text-decoration-none"
+                      >Online Chat</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-white text-decoration-none"
+                      >WhatsApp</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-white text-decoration-none"
+                      >Email</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <!-- FAQ -->
+              <div class="col-4">
+                <h6 class="fw-bold">FAQ</h6>
+                <ul class="list-unstyled small">
+                  <li>
+                    <a href="#" class="text-white text-decoration-none"
+                      >Account</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-white text-decoration-none"
+                      >Payments</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-white text-decoration-none"
+                      >Orders</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-white text-decoration-none"
+                      >Returns</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="text-center small mt-4">
+          Sabar Electrics © 2025. All Rights Reserved
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+      crossorigin="anonymous"
+    ></script>
+    <script src="asset/js/setting.js"></script>
+  </body>
+</html>

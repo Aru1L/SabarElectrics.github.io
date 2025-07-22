@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link href="asset/css/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container">
+        <!-- Logo TOKO Sabar Electrics -->
+        <a
+          class="navbar-brand"
+          style="font-weight: bold; color: #28809a"
+          href="Landing Page.html"
+          >Sabar Electrics</a
+        >
+        <!-- Dropdown -->
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              data-bs-toggle="dropdown"
+              href="#"
+              role="button"
+              aria-expanded="false"
+            >
+              Kategori
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <!-- Toggler untuk mobile -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <!-- Form Search -->
+          <form class="d-flex ms-auto me-3" role="search">
+            <input
+              class="form-control"
+              type="search"
+              placeholder="Cari Barang Electrics"
+              aria-label="Cari"
+              style="width: 700px"
+            />
+          </form>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="navbar-brand" href="Keranjang.html">
+                <img
+                  src="asset/icon/keranjang.png"
+                  alt="keranjang"
+                  width="30"
+                  height="30"
+                />
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="navbar-brand" href="#">
+                <img
+                  src="asset/icon/notif.png"
+                  alt="notif"
+                  width="30"
+                  height="30"
+                />
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="navbar-brand" href="Chat.html">
+                <img
+                  src="asset/icon/whatsapp.png"
+                  alt="whatsapp"
+                  width="30"
+                  height="30"
+                />
+              </a>
+            </li>
+            <li class="nav-item me-2 ms-2">
+              <button
+                type="button"
+                class="btn btn-primary"
+                style="background-color: #28809a"
+              >
+                Daftar
+              </button>
+            </li>
+            <li class="nav-item me-2 ms-2">
+              <button type="button" class="btn btn-outline-custom">
+                masuk
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container my-5">
+      <div class="row">
+        <!-- profil user -->
+        <div class="col-md-2">
+          <div
+            class="card text-white text-center"
+            style="background-color: #28809a"
+          >
+            <div class="card-body">
+              <img src="asset/icon/profile.png" alt="User" width="80" />
+              <h6 class="mt-2">User</h6>
+            </div>
+          </div>
+        </div>
+        <!-- Chat -->
+        <div class="col-md-10">
+          <div class="d-flex" style="height: 400px">
+            <!-- daftar admin -->
+            <div style="width: 200px; background-color: #28809a; padding: 10px">
+              <h6 class="text-white">Chat</h6>
+              <button class="btn btn-light w-100 my-1">Admin 1</button>
+              <button class="btn btn-light w-100 my-1">Admin 2</button>
+              <button class="btn btn-light w-100 my-1">Admin 3</button>
+            </div>
+            <!-- Area Chat -->
+            <div
+              class="flex-grow-1 bg-light p-3 d-flex flex-column justify-content-between"
+            >
+              <div>
+                <h6>Admin 1</h6>
+                <hr />
+                <div style="height: 250px; overflow-y: auto">
+                  <!-- Chat area kosong -->
+                </div>
+              </div>
+              <div class="d-flex">
+                <input
+                  type="text"
+                  class="form-control me-2"
+                  placeholder="Tulis Pesan..."
+                />
+                <button class="btn" style="background-color: #28809a">
+                  <img src="asset/icon/send.png" width="25" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

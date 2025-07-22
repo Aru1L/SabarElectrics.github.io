@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sabar Electrics - Checkout</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="asset/css/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container-fluid bg-white">
+      <div class="row justify-content-center">
+        <div class="col-12" style="max-width: 1440px">
+          <!-- Header -->
+          <header class="mt-4 px-4">
+            <a href="Landing Page.html" class="text-decoration-none">
+              <h1 class="brand-title">Sabar Electrics</h1>
+            </a>
+          </header>
+          <main class="px-4 mt-3">
+            <div class="row g-4">
+              <!-- checkout start -->
+              <div class="col-lg-8">
+                <h2 class="checkout-title mb-4">Checkout</h2>
+
+                <!-- alamat pengiriman -->
+                <div class="card shipping-card mb-4">
+                  <div class="card-body">
+                    <h3 class="shipping-title">Alamat Pengiriman</h3>
+                    <h4 class="customer-name">Budiono Pangarep</h4>
+                    <p class="shipping-address">
+                      Jl. Ring Road, Kec. Jaten, Kabupaten
+                      Karanganyar, Jawa Tengah
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Product -->
+                <div class="card product-card">
+                  <div class="card-body">
+                    <h3 class="product-title mb-4">Lampu HIas</h3>
+
+                    <div class="row g-3">
+                      <div class="col-auto">
+                        <img
+                          src="asset/Rekomendasi/gbr4.png"
+                          alt="Product image"
+                          class="product-image"
+                        />
+                      </div>
+
+                      <div class="col">
+                        <div
+                          class="d-flex flex-column flex-md-row justify-content-between align-items-start"
+                        >
+                          <h4 class="product-description">
+                            Lampu Hias minimalis Warna Rosegold
+                          </h4>
+                          <div class="product-price">1 x Rp150.000</div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Details belanja -->
+                    <div class="shipping-details mt-4">
+                      <div class="accordion" id="shippingAccordion">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button
+                              class="accordion-button shipping-type-btn"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#shippingType"
+                            >
+                              Reguler
+                            </button>
+                          </h2>
+                          <div
+                            id="shippingType"
+                            class="accordion-collapse collapse show"
+                          >
+                            <div class="accordion-body">
+                              <div class="shipping-option">
+                                <div
+                                  class="d-flex justify-content-between align-items-start"
+                                >
+                                  <div>
+                                    <div class="courier-name">
+                                      J&T (Rp9.000)
+                                    </div>
+                                    <div class="delivery-estimate">
+                                      Estimasi sampai 18 - 20 Mei
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="form-check mt-3">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          id="insurance"
+                        />
+                        <label
+                          class="form-check-label insurance-label"
+                          for="insurance"
+                        >
+                          Asuransi Pengiriman Barang (Rp4.000)
+                        </label>
+                      </div>
+                    </div>
+
+                    <!-- rincian order -->
+                    <div class="order-summary mt-4">
+                      <div class="d-flex justify-content-between mb-2">
+                        <span class="summary-label">Subtotal</span>
+                        <span class="summary-value">Rp150.000</span>
+                      </div>
+                      <div class="d-flex justify-content-between mb-2">
+                        <span class="summary-label">Ongkos Kirim</span>
+                        <span class="summary-value">Rp9.000</span>
+                      </div>
+                      <hr class="summary-divider" />
+                      <div class="d-flex justify-content-between">
+                        <span class="summary-total">Total</span>
+                        <span class="summary-total">Rp159.000</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- metode pembayaran -->
+              <div class="col-lg-4">
+                <div class="payment-section">
+                  <h3 class="payment-title mb-4">Metode Pembayaran</h3>
+
+                  <div class="payment-methods mb-4">
+                    <div class="form-check payment-option mb-3">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="paymentMethod"
+                        id="shopeepay"
+                        value="shopeepay"
+                        checked
+                      />
+                      <label
+                        class="form-check-label payment-label"
+                        for="shopeepay"
+                      >
+                        <div class="card payment-card">
+                          <div
+                            class="card-body d-flex justify-content-between align-items-center"
+                          >
+                            <span class="payment-text">ShopeePay</span>
+                            <div class="payment-check-indicator">
+                              <i class="fas fa-check-circle"></i>
+                            </div>
+                          </div>
+                        </div>
+                      </label>
+                    </div>
+
+                    <div class="form-check payment-option mb-3">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="paymentMethod"
+                        id="dana"
+                        value="dana"
+                      />
+                      <label class="form-check-label payment-label" for="dana">
+                        <div class="card payment-card">
+                          <div
+                            class="card-body d-flex justify-content-between align-items-center"
+                          >
+                            <span class="payment-text">DANA</span>
+                            <div class="payment-check-indicator">
+                              <i class="fas fa-check-circle"></i>
+                            </div>
+                          </div>
+                        </div>
+                      </label>
+                    </div>
+
+                    <div class="form-check payment-option mb-3">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="paymentMethod"
+                        id="gopay"
+                        value="gopay"
+                      />
+                      <label class="form-check-label payment-label" for="gopay">
+                        <div class="card payment-card">
+                          <div
+                            class="card-body d-flex justify-content-between align-items-center"
+                          >
+                            <span class="payment-text">GoPay</span>
+                            <div class="payment-check-indicator">
+                              <i class="fas fa-check-circle"></i>
+                            </div>
+                          </div>
+                        </div>
+                      </label>
+                    </div>
+
+                    <div class="form-check payment-option mb-3">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="paymentMethod"
+                        id="qris"
+                        value="qris"
+                      />
+                      <label class="form-check-label payment-label" for="qris">
+                        <div class="card payment-card">
+                          <div
+                            class="card-body d-flex justify-content-between align-items-center"
+                          >
+                            <span class="payment-text">QRIS</span>
+                            <div class="payment-check-indicator">
+                              <i class="fas fa-check-circle"></i>
+                            </div>
+                          </div>
+                        </div>
+                      </label>
+                    </div>
+                  </div>
+
+                  <!-- menampilkan metode pembayaraan yang dipilih -->
+                  <div class="selected-payment mb-3">
+                    <small class="text-white-50">Metode terpilih: </small>
+                    <span id="selectedPaymentText" class="text-white fw-bold"
+                      >ShopeePay</span
+                    >
+                  </div>
+
+                  <!-- Final Total and Pay Button -->
+                  <div class="card total-card mb-3">
+                    <div
+                      class="card-body d-flex justify-content-between align-items-center"
+                    >
+                      <span class="total-label">Total</span>
+                      <span class="total-amount">Rp159.000</span>
+                    </div>
+                  </div>
+
+                  <button class="btn btn-pay w-100" id="payButton">
+                    Bayar sekarang
+                  </button>
+                </div>
+              </div>
+            </div>
+          </main>
+
+          <!-- Footer -->
+          <footer class="footer-section mt-5">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-12">
+                  <div class="footer-content">
+                    <div class="row g-4">
+                      <div class="col-lg-3 col-md-6">
+                        <h4 class="footer-brand">SABAR ELECTRICS</h4>
+                        <p class="footer-description">
+                          Dapatkan elektronik berkualitas dengan harga
+                          terjangkau – klik sekarang dan temukan penawaran
+                          spesial hanya untuk Anda!
+                        </p>
+                      </div>
+
+                      <div class="col-lg-3 col-md-6">
+                        <h5 class="footer-title">About</h5>
+                        <ul class="footer-links">
+                          <li><a href="#">About us</a></li>
+                          <li><a href="#">Blog</a></li>
+                        </ul>
+                      </div>
+
+                      <div class="col-lg-3 col-md-6">
+                        <h5 class="footer-title">Support</h5>
+                        <ul class="footer-links">
+                          <li><a href="#">Contact Us</a></li>
+                          <li><a href="#">Online Chat</a></li>
+                          <li><a href="#">WhatsApp</a></li>
+                          <li><a href="#">Email</a></li>
+                        </ul>
+                      </div>
+
+                      <div class="col-lg-3 col-md-6">
+                        <h5 class="footer-title">FAQ</h5>
+                        <ul class="footer-links">
+                          <li><a href="#">Account</a></li>
+                          <li><a href="#">Payments</a></li>
+                          <li><a href="#">Orders</a></li>
+                          <li><a href="#">Returns</a></li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="row mt-4">
+                      <div class="col-12 text-center">
+                        <p class="footer-copyright">
+                          Sabar Electrics 2025. All Rights Reserved
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JavaScript untuk metode pembayaran -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // untuk mengambil elemen HTML yang dibutuhkan
+        const paymentRadios = document.querySelectorAll(
+          'input[name="paymentMethod"]'
+        );
+        const selectedPaymentText = document.getElementById(
+          "selectedPaymentText"
+        );
+        const payButton = document.getElementById("payButton");
+
+        // Fungsi menampilkan metode yang dipilih
+        function updateSelectedPayment() {
+          const selectedRadio = document.querySelector(
+            'input[name="paymentMethod"]:checked'
+          );
+          if (selectedRadio) {
+            const paymentLabel =
+              selectedRadio.nextElementSibling.querySelector(
+                ".payment-text"
+              ).textContent;
+            selectedPaymentText.textContent = paymentLabel;
+          }
+        }
+
+        // Fungsi untuk update tampilan metode pembayaran yang dipiluh
+        function updatePaymentCardStyles() {
+          paymentRadios.forEach((radio) => {
+            const card =
+              radio.nextElementSibling.querySelector(".payment-card");
+            const checkIndicator = card.querySelector(
+              ".payment-check-indicator"
+            );
+
+            if (radio.checked) {
+              card.classList.add("selected");
+              checkIndicator.style.opacity = "1";
+            } else {
+              card.classList.remove("selected");
+              checkIndicator.style.opacity = "0";
+            }
+          });
+        }
+
+        // Menjalankan fungsi setiap kali metode diubah
+        paymentRadios.forEach((radio) => {
+          radio.addEventListener("change", function () {
+            updateSelectedPayment();
+            updatePaymentCardStyles();
+          });
+        });
+
+        // Saat tombol "Bayar sekarang" ditekan akan menampilkan pop up "memproses pembayaran dengan (sesuai metode yang kita pilih sebelumnya)"
+        payButton.addEventListener("click", function () {
+          const selectedRadio = document.querySelector(
+            'input[name="paymentMethod"]:checked'
+          );
+          if (selectedRadio) {
+            const paymentMethod = selectedRadio.value;
+            alert(
+              `Memproses pembayaran dengan ${selectedPaymentText.textContent}...`
+            );
+
+            // Loding bentar pada button "Bayar Sekarang" akan berubah menjadi "Memproses..."
+            payButton.innerHTML =
+              '<i class="fas fa-spinner fa-spin me-2"></i>Memproses...';
+            payButton.disabled = true;
+
+            // setelah menekan tombol "bayar sekarang " akan ada jeda sebentar dan menampilkan pop up "Pembayaran berhasil"
+            setTimeout(() => {
+              payButton.innerHTML = "Bayar sekarang";
+              payButton.disabled = false;
+              alert("Pembayaran berhasil diproses!");
+            }, 2000);
+          }
+        });
+
+        // Initialize styles on page load
+        updateSelectedPayment();
+        updatePaymentCardStyles();
+      });
+    </script>
+  </body>
+</html>
